@@ -55,6 +55,10 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.22</version>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
@@ -86,7 +90,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.4.1</version>
                 <configuration>
-                    <mainClass>com.nicksui.wiki.WikiApplication</mainClass>
+                    <mainClass>com.nicksui.wiki.config.WikiApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>

@@ -1,5 +1,6 @@
-package com.nicksui.wiki;
+package com.nicksui.wiki.config;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -9,6 +10,7 @@ import org.springframework.core.env.Environment;
 
 @ComponentScan("com.nicksui")
 @SpringBootApplication
+@MapperScan("com.nicksui.wiki.mapper")
 public class WikiApplication {
 
     private static final Logger logger= LoggerFactory.getLogger(WikiApplication.class);
