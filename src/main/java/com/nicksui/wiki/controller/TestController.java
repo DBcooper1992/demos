@@ -1,6 +1,8 @@
 package com.nicksui.wiki.controller;
 
+import com.nicksui.wiki.domain.Demo;
 import com.nicksui.wiki.domain.Test;
+import com.nicksui.wiki.mapper.DemoMapper;
 import com.nicksui.wiki.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -40,9 +42,8 @@ public class TestController {
 
     }
 
-    @GetMapping("/test/list")
-    public List<Test> list(){
+    @GetMapping("/demoQuery")
+    public Demo demoQuery(){
         return testService.list();
     }
-
 }
