@@ -41,7 +41,9 @@
         <javaClientGenerator type="XMLMAPPER" targetPackage="com.nicksui.wiki.mapper"
                              targetProject="src/main/java"/>
         <!--生成全部表tableName设为%-->
-        <table tableName="demo" domainObjectName="Demo">
+<!--        <table tableName="demo" domainObjectName="Demo">-->
+        <table tableName="ebook">
+
             <!-- 注意表中的主键ID！！！！！！ -->
             <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
         </table>

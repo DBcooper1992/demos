@@ -16,12 +16,12 @@ public class TestService {
 
     //这里构造函数注入是官方推荐的
     @Autowired
-    public TestService(DemoMapper demoMapper){
-        this.demoMapper=demoMapper;
+    public TestService(DemoMapper demoMapper) {
+        this.demoMapper = demoMapper;
     }
 
-    public Demo list(){
-        Integer idInt= 1;
-        return  demoMapper.selectByPrimaryKey(idInt.longValue());
+    public Demo list() {
+        Integer idInt = 1;
+        return demoMapper.selectByPrimaryKey(idInt.longValue());
     }
 }
